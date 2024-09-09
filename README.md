@@ -20,3 +20,5 @@ This application is about tasty food made with Next.js
 -   [x] Storing uploaded images & storing data in the DB
 -   [x] Used useFormStatus
 -   [x] Backend validation for inputs 
+-   [x] Added useFormState to handle form errors
+-   [x] Preventing cache for dynamic pages 
