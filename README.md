@@ -1,6 +1,6 @@
 # Foodies App
 
-This application is about tasty food made with Next.js
+This application is about tasty food made with Next.js 15
 
 ## What is done
 
