@@ -22,3 +22,6 @@ This application is about tasty food made with Next.js
 -   [x] Backend validation for inputs 
 -   [x] Added useFormState to handle form errors
 -   [x] Preventing cache for dynamic pages 
+-   [x] Implemented static & dynamic metadata
+-   [x] Upgrade Next.js 15
+-   [x] Fixed API params   
