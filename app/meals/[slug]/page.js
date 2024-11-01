@@ -3,9 +3,22 @@ import { getMeal } from '@/lib/meals';
 import classes from './page.module.css';
 import { notFound } from 'next/navigation';
 
-export default function MealsPostPage({ params }) {
-	const meal = getMeal(params.slug);
-	if(!meal){
+export async function generateMetadata({ params }) {
+	const { slug } = await params;
+	const meal = getMeal(slug);
+	if (!meal) {
+		notFound();
+	}
+	return {
+		title: meal.title,
+		description: meal.summary,
+	};
+}
+
+export default async function MealsPostPage({ params }) {
+	const { slug } = await params;
+	const meal = getMeal(slug);
+	if (!meal) {
 		notFound();
 	}
 	meal.instructions = meal.instructions.replace(/\n/g, '<br />');
